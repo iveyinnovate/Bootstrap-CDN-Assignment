@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+
     <title>Bootstrap CDN assignment</title>
 
     <style>
@@ -20,10 +21,7 @@
       .jumbotron H1 {
         text-align: center;
         color: #fff;
-
-
-;
-      }
+         }
 
       .lead {
           text-align: center;
@@ -37,13 +35,23 @@
           width: 800px;
           height: 600px;
           display: block;
+          padding-top: 50px;
+          }
 
+        .main-h1 {
+          padding-top: 75px;
+          padding-bottom: 50px;
+        } 
 
-         }
 
          .alert-primaryrole {
           border-radius: 10px;
          }
+
+
+     #gallery {
+      padding-top: 300px;
+     }
 
       .container-imagescolumns {
           max-width: 100%;
@@ -64,16 +72,37 @@
 
       .about h2 {
         text-align: center;
+        font-size: 35px;
+      }
+
+      .about p {
+        font-size: 25px;
       }
 
       .about button {
         border-radius: 10px;
-
       }
 
+      .instagram-logo {
+        text-align: center;
+      }
+
+      .email-logo{
+        text-align: center;
+      }
      
+      .container-footer p {
+        text-align: center;
+        color: #C0C0C0;
+        padding-top: 15px;
+      }
+
 
     </style>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+
   </head>
   <body>
     
@@ -89,30 +118,16 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Your Next Experience
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Film Set Catering</a>
-          <a class="dropdown-item" href="#">Dinner Parties</a>
-          
-          <a class="dropdown-item" href="#">Weekly Meal Prep</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        
+       <li class="nav-item">
+        <a class="nav-link" href="#gallery">Gallery</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      
-      
-    </form>
+    
   </div>
 </nav>
 
@@ -128,16 +143,17 @@
 
       <div class="main-image text-center">
             <img src="images/FoodNetwork.jpg" alt="Chef Brandon Ivey featured on FoodNetwork's Cut Throat Kitchen Episode 10 Season 14">
-            
-            <h1>Featured on the Food Network's Cutthroat Kitchen</h1>
+            <br>
+            <h1 class="main-h1">Featured on the Food Network's Cutthroat Kitchen</h1>
             
             <div class="alert alert-primary role="alert">
               <a href="https://www.youtube.com/watch?v=njigrLI9xmI">Check out the episode!</a> 
             </div>
-
-      </div>      
+     </div>      
       
-    <div class="container-imagescolumns text-center">
+      
+
+    <div id="gallery" class="container-imagescolumns text-center">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-12">
                  <img src="images/DoukaLamb.jpg" class="img-fluid" alt="Plated lamb dish" width="350" height="300">
@@ -191,16 +207,31 @@
         </div>
     </div>
 
-    <div class="about">
+    <div id="about" class="about">
       <h2>
-        About
+        ABOUT
       </h2>
       <p>
-        Chef Brandon Ivey is a Los Angeles native. His specialty is not specific to a particualar genre or style of food but more in creating a heavenly experience for your taste buds. Apart from the years he has spent in fine dining restaurants, he is experienced in (and not limited to); film set catering, craft services, party catering, intimate dinner parties, and weekly meal prep (for all you busy folks)...
+        Chef Brandon Ivey is a Los Angeles native. He is a gourmet organic chef who's specialty is not specific to a particualar genre or style of food, but more so tailored to creating a heavenly experience for your taste buds. Brandon comes from a fine dining background, and is also experienced in; film set catering, craft services, party catering, intimate dinner parties, and healthy weekly meal prep. 
       </p>
       <button type="button" class="btn btn-outline-danger">Learn More</button>
     </div>
 
+    <div class="container-footer">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+         <h1 id="contact" class="display-4">CONTACT</h1>
+           <div style="font-size:3em; color:White" class="email-logo">
+              <i class="far fa-envelope-open"></i></a>
+               </div>
+                <p>email: brandonivey86@yahoo.com</p>
+           <div style="font-size:3em; color:White" class="instagram-logo">
+              <a href="https://www.instagram.com/sirius_chef/">
+              <i class="fas fa-camera-retro"></i></a>
+            </div>
+           </div>
+      </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
